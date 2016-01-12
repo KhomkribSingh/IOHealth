@@ -1,0 +1,17 @@
+<ion-view view-title="Health Data">
+  <ion-content class="has-header padding">
+    {{ title }}
+
+    <div class="list">
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="Your height" ng-model="body.height">
+          </label>
+          <button class="button button-small" ng-click="saveHeight()">Set Height</button>
+        </div>
+    </div>
+      <button class="button button-block button-positive" ng-click="getHeight()">Get Height</button>
+      <button class="button button-block button-positive" ng-click="saveWorkout()">Set Workout</button>
+      <button class="button button-block button-positive" ng-click="getWorkouts()">Get Workout data</button>
+  </ion-content>
+</ion-view>
